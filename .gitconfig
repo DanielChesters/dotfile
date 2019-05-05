@@ -1,0 +1,48 @@
+[user]
+	name = Daniel Chesters
+	email = daniel.chesters@gmail.com
+	signingkey = A7B7C28B87937DCC7DE98C1B530FB3B2E110BD95
+[credential]
+	helper = cache --timeout=3600
+[alias]
+	cm = commit
+	ac = !git add -A && git commit
+    st = status -sb
+    lg = log --graph --pretty=tformat:'%Cred%h%Creset -%C(auto)%d%Creset %s %Cgreen(%an %ar)%Creset'
+[color]
+	ui = auto
+[push]
+    default = simple
+    followTags = true
+[core]
+	autocrlf = input
+	editor = gvim --nofork
+[diff]
+	mnemonicPrefix = true
+    wordRegex = .
+    tool = icdiff
+[difftool]
+    prompt = false
+[difftool "icdiff"]
+    cmd = /usr/bin/icdiff --line-numbers $LOCAL $REMOTE
+[commit]
+    gpgSign = true
+[grep]
+	extendedRegexp = true
+[log]
+	abbrevCommit = true
+[merge]
+    conflictStyle = diff3
+    ff = only
+[mergetool]
+	keepBackup = false
+	keepTemporaries = false
+[core]
+    excludesfile = /home/daniel/.gitignore_codenvy
+[status]
+    showUntrackedFiles = all
+[pager]
+	diff = diff-so-fancy | less --tabs=1,5 -RFX
+    show = diff-so-fancy | less --tabs=1,5 -RFX
+[transfer]
+    fsckobjects = true
