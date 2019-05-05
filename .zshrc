@@ -1,34 +1,4 @@
 POWERLEVEL9K_MODE='awesome-fontconfig'
-#POWERLEVEL9K_MODE='awesome-patched'
-
-#source /usr/share/zsh/share/antigen.zsh
-
-#export POWERLEVEL9K_INSTALLATION_PATH=$ANTIGEN_BUNDLES/bhilburn/powerlevel9k
-
-#antigen use oh-my-zsh
-
-#antigen bundles <<EOBUNDLES
-#  git
-#  archlinux
-#  adb
-#  gitfast
-#  git-extras
-#  git-prompt
-#  mvn
-#  gradle
-#  gitignore
-#  cp
-#  sudo
-#  zsh-users/zsh-syntax-highlighting
-#  rupa/z
-#  Tarrasch/zsh-bd
-#  zsh-users/zsh-autosuggestions
-#  zsh-users/zsh-completions
-#EOBUNDLES
-
-#antigen theme bhilburn/powerlevel9k powerlevel9k
-#antigen apply
-
 autoload -Uz compinit && compinit
 
 source <(antibody init)
