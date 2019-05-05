@@ -1,7 +1,3 @@
-[user]
-	name = Daniel Chesters
-	email = daniel.chesters@gmail.com
-	signingkey = A7B7C28B87937DCC7DE98C1B530FB3B2E110BD95
 [credential]
 	helper = cache --timeout=3600
 [alias]
@@ -46,3 +42,5 @@
     show = diff-so-fancy | less --tabs=1,5 -RFX
 [transfer]
     fsckobjects = true
+[include]
+    path = .gitconfig.local
