@@ -6,3 +6,9 @@ cd "$HOME"
 
 echo "Init submodules"
 yadm submodule update --recursive --init
+
+echo "Init symbolic links"
+mkdir -p .config/dunst
+ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
+mkdir -p .config/zathura
+ln -sf ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
