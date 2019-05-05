@@ -1,3 +1,6 @@
 [submodule ".vim"]
 	path = .vim
 	url = git@github.com:DanielChesters/dotvim.git
+[submodule ".config/tilix/schemes/tilix-gruvbox"]
+	path = .config/tilix/schemes/tilix-gruvbox
+	url = https://github.com/MichaelThessel/tilix-gruvbox.git

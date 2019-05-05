@@ -12,3 +12,6 @@ mkdir -p .config/dunst
 ln -sf ~/.cache/wal/dunstrc ~/.config/dunst/dunstrc
 mkdir -p .config/zathura
 ln -sf ~/.cache/wal/zathurarc ~/.config/zathura/zathurarc
+cd "$HOME"/.config/tilix/schemes
+ln -sf tilix-gruvbox/*.json .
+
